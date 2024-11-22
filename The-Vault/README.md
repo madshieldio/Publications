@@ -1,6 +1,6 @@
 # The Vault Program Audit Report
 
-![Mad Shield Logo](MadShield-Logo-Big.png "MadShield Logo")
+![Mad Shield Logo](pics/MadShield-Logo-Big.png "MadShield Logo")
 
 **Mad Shield**
 Date: November 19, 2024</br>
@@ -643,7 +643,7 @@ The second program directed-stake (actually a collection of two programs: direct
 
 The following graph describes the account structure of the directed-stake and directed-stake-token programs:
 
-![DST Accounts](the-vault-dst-accounts.png "DST Accounts")
+![DST Accounts](pics/the-vault-dst-accounts.png "DST Accounts")
 
 The `DSTInfo` is the main account identifying the DST pool, it is tied to the following:
 - `vsol_reserve` - account to hold deposited vSOL by stakers.
@@ -652,7 +652,7 @@ The `DSTInfo` is the main account identifying the DST pool, it is tied to the fo
 
 The following graph describe the account structure of the liquid-unstaker program:
 
-![Unstaker Accounts](the-vault-unstaker-accounts.png "Unstaker Accounts")
+![Unstaker Accounts](pics/the-vault-unstaker-accounts.png "Unstaker Accounts")
 
 The `Pool` is the main account identifying the Unstaker pool, it is tied to the following:
 - `sol_vault` - account holding deposited SOL by the LP providers
@@ -699,7 +699,7 @@ This section contains brief instruction description of the audited programs.
 - It keeps track of deactivated stake accounts using a `StakeAccountInfo` account tied to each stake and the pool, ensuring consistency and transparency.
 
 The following picture presents the Flow of the Unstake LST instruction:
-![Unstaker LST Flow](the-vault-unstaker-lst-flow.png "Unstaker LST Flow")
+![Unstaker LST Flow](pics/the-vault-unstaker-lst-flow.png "Unstaker LST Flow")
 
 **liquid_unstake_stake_account**
 - This instruction lets users instantly unstake SOL from an active, delegated stake account without lockup restrictions.
@@ -707,7 +707,7 @@ The following picture presents the Flow of the Unstake LST instruction:
 - The StakeAccountInfo account links the stake account to the pool.
 
 The following picture presents the Flow of the Unstake Stake Account instruction:
-![Unstaker Stake Flow](the-vault-unstaker-stake-flow.png "Unstaker Stake Flow")
+![Unstaker Stake Flow](pics/the-vault-unstaker-stake-flow.png "Unstaker Stake Flow")
 
 **update**
 - This permissionless instruction closes deactivated stake accounts and their linked StakeAccountInfo accounts.
